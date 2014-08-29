@@ -4,6 +4,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale="1.0">
         <title>Shambhavi's Blog </title>
+        <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script|Metamorphous' rel='stylesheet' type='text/css'>
         <link href="http://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
         <link rel="stylesheet" href="../stylesheets/normalize.css">
@@ -11,7 +12,6 @@
     </head>
     <body>
         <header class="primary-header">
-          <p class="deco-1"><img src="../imgs/header_image.png" alt="spike"></p>
           <div class="header">
             <h1 class="logo-1">Shambhavi Sachid</h1>
             <h3 class="logo-2">Web Developer</h3>
@@ -27,24 +27,51 @@
               </ul>
             </nav>
           </div>
-          <p class="deco-2"><img src="../imgs/header_image.png" alt="sunflower"></p>
         </header>
 
 
-        <section class="main-content">
-          <div class="blog-title">
-           <p class="blog blog-arrow"><a href="#"><img src="../imgs/arrow.gif" alt="back arrow"></a></p>
-           <h2 class="blog blog-heading">BLOG TITLE</h2>
-           <h4 class="blog">DATE</h4>
-          </div>
+      <section class="main-content">
+          <section class="prev-blog">
+              <div class="prev-title">
+                 <h2 class="blog blog-heading">Previous Blog Title</h2>
+              </div>
 
-          <div class="blog-content">
-            <p><!--Blog content will come here--></p>
-          </div>
+              <div class="blog-content side">
+                  <p><!--Brief Highlights about previous blog--></p>
+              </div>
+          </section>
+
+
+          <section class="current-blog">
+
+              <div class="blog-title">
+               <p class="blog blog-arrow"><a href="#">Previous</a></p>
+               <p class="blog-arrow blog-right"><a href="#">Next</a></p>
+               <h2 class="blog blog-heading">BLOG TITLE</h2>
+               <h4 class="blog">DATE</h4>
+              </div>
+
+              <div class="blog-content">
+                      <p><!--Main blog contents--></p>
+              </div>
+
         </section>
 
-        <footer class="primary-footer container group">
-            <small>&copy; Shambhavi Sachid </small>
+        <section class="next-blog">
+              <div class="next-title">
+                 <h2 class="blog blog-heading">Next Blog Title</h2>
+              </div>
+
+              <div class="blog-content side">
+                  <p><!-- Brief highlights about next blog--></p>
+              </div>
+        </section>
+
+      </section>
+
+
+      <footer class="primary-footer container group">
+            <small>&copy; 2014 Shambhavi Sachid </small>
             <nav class="nav">
               <ul>
                 <li><a href="#"><img src="../imgs/facebook.png"></a></li>
@@ -55,7 +82,7 @@
                 <li><a href="#"><img src="../imgs/googleplus.png"></a></li>
               </ul>
             </nav>
-        </footer>
+      </footer>
 
     </body>
 </html>
