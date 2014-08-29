@@ -60,6 +60,7 @@ nav a.selected {
   padding:0 5%;
   border: 8px dotted brown;
   background:linear-gradient(#C57E30,#F3E2CF,#ffcc99,#964B00);
+  border-radius:10%;
 }
 
 .blog-arrow {
