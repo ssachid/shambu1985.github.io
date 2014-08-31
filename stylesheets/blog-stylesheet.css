@@ -107,6 +107,40 @@ nav a.selected {
   font-weight:700;
   }
 
+  .next {
+    font-size:16px;
+    margin-top:-10px;
+  }
+
+  .next span {
+    color:grey;
+    font-weight:normal;
+  }
+  .chef {
+
+    margin:0 -20px 0 -20px;
+    overflow:hidden;
+  }
+
+  .side-blog {
+    font-size:16px;
+    line-height:22px;
+    text-align:justify;
+    font-family:inherit;
+    margin:20px -20px 0 -20px;
+    font-weight:500;
+  }
+
+  .link {
+    color:#b7410e;
+    font-weight:500;
+    text-decoration:underline;
+  }
+
+  .link:hover {
+    font-weight:normal;
+    letter-spacing:normal;
+  }
 .blog-content p {
   color:black;
   line-height:22px;
