@@ -11,6 +11,7 @@ body {
 
 .pair h1{
   padding-bottom:2%;
+
 }
 
 
@@ -18,6 +19,7 @@ body {
 .content {
   max-width:80%;
   margin:1% auto;
+
 }
 
 .content img {
@@ -47,4 +49,21 @@ body {
 .content ul li {
   line-height:150%;
   font-family: Lato, cursive, "Metamorphous", "Open Sans", sans-serif;
+}
+
+.footer div{
+    background:blue;
+    width:100%;
+    height:40px;
+}
+
+@media screen and (max-width:620px) {
+  .pair h1{
+  padding-bottom:2%;
+  line-height:120%;
+}
+
+  .content h3 {
+    line-height:140%;
+  }
 }

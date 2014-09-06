@@ -1,7 +1,9 @@
 /* General Styling*/
 
 body {
-  background:#F7ECE6;
+  /*background:#F7ECE6;*/
+  background:#fef2ee;
+
 }
 
 /* General Styling of Links*/
@@ -144,6 +146,10 @@ a.selected, a:hover {
   display:inline-block;
   float:left;
   margin:1% 5% 3% 8%;
+  border-radius:20px;
+
+
+
 }
 
 .blogs {
@@ -153,7 +159,10 @@ a.selected, a:hover {
   display:inline-block;
   float:left;
   margin:1% 0 3% 0%;
+  border-radius:20px;
+
 }
+
 
 .my-info-1 li a {
   color:#b7410e;
@@ -172,6 +181,7 @@ a.selected, a:hover {
     color: white;
     background:#b7410e;
     padding:2%;
+    border-radius:20px;
 
 }
 
