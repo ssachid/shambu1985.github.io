@@ -1,10 +1,10 @@
 /* General Styling*/
 
 body {
-  background:white;
+  background:#F7ECE6;
 }
 
-/*Styling of Links*/
+/* General Styling of Links*/
 a {
   text-decoration:none;
   color:white;
@@ -12,12 +12,8 @@ a {
   letter-spacing:1px;
 }
 
-a:hover {
+a.selected, a:hover {
   color:black;
-}
-
-nav a.selected {
-  color:#ffcc99;
 }
 
 /*Styling of header */
@@ -26,7 +22,15 @@ nav a.selected {
   text-align:center;
   background:#b7410e;
   padding-top:10px;
-  padding-bottom:10px;
+  padding-bottom:3%;
+
+}
+
+.logo {
+  display:inline-block;
+  float:left;
+  margin:0 8%;
+
 }
 
 .logo-1 {
@@ -44,12 +48,25 @@ nav a.selected {
   font:  18px/18px 'Metamorphous', cursive, "Helvetica Neue", "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* Styling of navigation bar */
+
 .nav li {
   display:inline-block;
-  margin:4% 1% 1% 1%;
-  padding:0.8%;
+  margin:2% 1% 1% 1%;
+  padding:0;
   }
 
+.primary-nav {
+  margin-right:7.5%;
+}
+.primary-nav li a {
+  font:  90%/150% 'Metamorphous', cursive,  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.primary-nav ul {
+  text-align:right;
+  margin-right:2%;
+}
 
 /* Styling of main content */
 .prev-blog {
@@ -167,13 +184,8 @@ nav a.selected {
 .side {
   margin:0 -25px;
 }
-.header {
-    display:inline-block;
-  }
 
-.primary-nav ul {
-    width:700px;
-  }
+
 
 .blog-content .img {
   width:100%;
@@ -225,6 +237,17 @@ nav a.selected {
   /* Week 3: techinical blog styles*/
 
 @media screen and (max-width: 1024px) {
+    .logo {
+            width:100%;
+            margin:0 auto;
+        }
+
+        .primary-nav ul {
+          display:block;
+          clear:both;
+          text-align:center;
+        }
+
     .prev-blog, .next-blog {
       display:none;
     }
@@ -236,17 +259,12 @@ nav a.selected {
 
       }
 
-    .primary-nav ul {
-        width:100%;
-      }
+
     .primary-footer small {
       display:none;
        }
 
-    .nav li:first-child {
-      padding:0;
-      margin-left:-50px;
-      }
+
 
     a:hover {
       color:black;

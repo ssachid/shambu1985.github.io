@@ -1,0 +1,50 @@
+body {
+  font: 18px/16px "Metamorphous", "Open Sans", sans-serif;
+}
+
+.pair {
+  background:blue;
+  color:white;
+  padding:1%;
+  text-align:center;
+}
+
+.pair h1{
+  padding-bottom:2%;
+}
+
+
+
+.content {
+  max-width:80%;
+  margin:1% auto;
+}
+
+.content img {
+  max-width: 50%;
+  margin:0 32%;
+  border-bottom:2px solid black;
+  border-right:2px solid black;
+  border-top:2px solid black;
+
+
+}
+
+.content h2 {
+    color:blue;
+}
+
+.content h3 {
+    color:blue;
+}
+
+.content p {
+  font: 18px/16px Lato, cursive, "Metamorphous", "Open Sans", sans-serif;
+    line-height:150%;
+    text-align:justify;
+}
+
+.content ul li {
+  line-height:150%;
+  font-family: Lato, cursive, "Metamorphous", "Open Sans", sans-serif;
+}

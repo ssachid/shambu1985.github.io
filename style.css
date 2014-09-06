@@ -1,0 +1,257 @@
+/* General Styling*/
+
+body {
+  background:#F7ECE6;
+}
+
+/* General Styling of Links*/
+a {
+  text-decoration:none;
+  color:white;
+  font-weight:300;
+  letter-spacing:1px;
+}
+
+a.selected, a:hover {
+  color:black;
+}
+
+/*Styling of header */
+
+.primary-header {
+  text-align:center;
+  background:#b7410e;
+  padding-top:10px;
+  padding-bottom:3%;
+  margin-top:-10px;
+  margin-bottom:-10px;
+}
+
+.logo {
+  display:inline-block;
+  float:left;
+  margin:0 8%;
+
+}
+
+.logo-1 {
+  color:white;
+  font-weight:600;
+  letter-spacing:2px;
+  font:  200%/100% 'Metamorphous', cursive,  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: 'Petit Formal Script', cursive;*/
+}
+
+.logo-2 {
+  color:white;
+  font-weight:400;
+  letter-spacing:2px;
+  font:  18px/18px 'Metamorphous', cursive, "Helvetica Neue", "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Styling of navigation bar */
+
+.nav li {
+  display:inline-block;
+  margin:2% 1% 1% 1%;
+  padding:0;
+  }
+
+.primary-nav {
+  margin-right:7.5%;
+}
+.primary-nav li a {
+  font:  90%/150% 'Metamorphous', cursive,  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.primary-nav ul {
+  text-align:right;
+  margin-right:2%;
+}
+
+
+
+/* Styling of my-info section */
+
+  .my-info {
+
+    width:80%;
+    margin:5% auto 3%;
+    height: 420px;
+    /*border:1px solid grey;*/
+  }
+
+  .my-info img {
+    width:450px;
+    height:350px;
+    border-radius:50%;
+    margin-top:2.5%;
+    margin-bottom : 3%;
+   /* margin: 1.5% 8% 4% 10%;*/
+    display:inline-block;
+    float:left;
+  }
+
+  .about {
+    display:inline-block;
+    float:left;
+    width:60%;
+    margin:-30px 0 0 5%;
+  }
+
+
+
+  .box {
+    display:inline-block;
+  width:160px;
+  text-align:center;
+  height:80px;
+  background:#b7410e;
+  /*background:linear-gradient(#b7410e,#38acec,#309067,#6aa121,#b7410e);*/
+  margin:0 6%;
+  border-radius:50%;
+  color:white;
+  }
+
+  .content-1 {
+    font:  400%/40%  cursive,  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #b7410e;
+  }
+
+  .content-2 {
+    font:  225%/20%  cursive,  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #b7410e;
+  }
+
+
+  .box p {
+     margin-top:17%;
+     font:  90%/150% 'Metamorphous', cursive,  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+
+.about-me {
+  font:  110%/150%  cursive,  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #b7410e;
+  text-align:justify;
+
+}
+
+.projects {
+  border:1px solid grey;
+  width:39%;
+  height:400px;
+  display:inline-block;
+  float:left;
+  margin:1% 5% 3% 8%;
+}
+
+.blogs {
+  border:1px solid grey;
+  width:39%;
+  height:400px;
+  display:inline-block;
+  float:left;
+  margin:1% 0 3% 0%;
+}
+
+.my-info-1 li a {
+  color:#b7410e;
+  font:  100%/130%  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-alignment: justify;
+}
+
+.my-info-1 li a:hover {
+  border-bottom:1px dotted #b7410e;;
+
+}
+.recent {
+  text-align:center;
+  margin:0% auto 0;
+  font:  110%/150% 'Metamorphous', cursive,  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    background:#b7410e;
+    padding:2%;
+
+}
+
+
+  /* Styling of footer section */
+.primary-footer {
+  clear:both;
+  padding-bottom:80px;
+  padding-top:48px;
+  background:#b7410e;
+  }
+
+.primary-footer small {
+    float:left;
+    font-weight:400;
+    margin-left:4%;
+    margin-top:1%;
+    color:white;
+
+  }
+
+.primary-footer .nav {
+  float:right;
+
+  }
+
+.primary-footer .nav li {
+  margin:0;
+  padding:0;
+  padding-top:-10px;
+  margin-top:-25px;
+  }
+
+.nav li:last-child {
+  margin-right:30px;
+  }
+
+  @media screen and (max-width:1366px) {
+        .my-info img {
+            width:30%;
+            height:50%;
+  }
+
+  .box {
+    margin:2% 2%;
+  }
+  }
+
+  @media screen and (max-width: 1024px) {
+       .logo {
+            width:100%;
+            margin:0 auto;
+        }
+
+        .primary-nav ul {
+          display:block;
+          clear:both;
+          text-align:center;
+        }
+
+        .my-info img {
+          display:none;
+        }
+
+        .about {
+          width:100%;
+          margin:0;
+        }
+
+       .primary-footer small {
+          display:none;
+        }
+
+     }
+
+      @media screen and (max-width:640px) {
+          .box {
+             margin:1% 1%;
+            }
+          .my-info-1 {
+            display:none;
+          }
+      }
