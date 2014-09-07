@@ -100,7 +100,7 @@ a.selected, a:hover {
 .img-content {
   border-left:1px solid #b7410e;
   padding-left:3%;
-  width:;
+
 }
 
 .box-2 p {
@@ -208,3 +208,9 @@ a.selected, a:hover {
 
      }
 
+
+@media screen and (max-width: 640px) {
+  .img-content {
+    width:80%;
+  }
+}
