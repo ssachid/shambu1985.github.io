@@ -2,8 +2,11 @@
 
 body {
   /*background:#F7ECE6;*/
-  background:#fef2ee;
-
+  background:url("http://www.wallpaperbod.com/wallpapers/2013/05/Beautiful-Bridges-Free-Golden-Gate-Bridge-At-Night--900x2880.jpg");
+  /*
+  http://indervilla.com/home/Bridge-Nite-HD.jpg
+  */
+  /*background:#fef2ee;*/
 }
 
 /* General Styling of Links*/
@@ -75,6 +78,8 @@ a.selected, a:hover {
 
 /* Styling of my-info section */
 
+
+
   .my-info {
 
     width:80%;
@@ -118,11 +123,13 @@ a.selected, a:hover {
   .content-1 {
     font:  400%/40%  cursive,  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #b7410e;
+    color:white;
   }
 
   .content-2 {
     font:  225%/20%  cursive,  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #b7410e;
+    color:white;
   }
 
 
@@ -135,12 +142,13 @@ a.selected, a:hover {
 .about-me {
   font:  110%/150%  cursive,  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #b7410e;
+    color:white;
   text-align:justify;
 
 }
 
 .projects {
-  border:1px solid grey;
+  border:1px solid white;
   width:39%;
   height:400px;
   display:inline-block;
@@ -153,7 +161,7 @@ a.selected, a:hover {
 }
 
 .blogs {
-  border:1px solid grey;
+  border:1px solid white;
   width:39%;
   height:400px;
   display:inline-block;
@@ -166,12 +174,13 @@ a.selected, a:hover {
 
 .my-info-1 li a {
   color:#b7410e;
+  color:white;
   font:  100%/130%  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-alignment: justify;
 }
 
 .my-info-1 li a:hover {
-  border-bottom:1px dotted #b7410e;;
+  border-bottom:1px dotted white;
 
 }
 .recent {
@@ -185,6 +194,9 @@ a.selected, a:hover {
 
 }
 
+.my-info-1 li {
+  color:white;
+}
 
   /* Styling of footer section */
 .primary-footer {
@@ -262,6 +274,10 @@ a.selected, a:hover {
              margin:1% 1%;
             }
           .my-info-1 {
+            display:none;
+          }
+
+          .box {
             display:none;
           }
       }
