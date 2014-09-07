@@ -222,4 +222,9 @@ a.selected, a:hover {
   .img-content {
     width:80%;
   }
+
+  .side {
+    margin-top:10%;
+    width:50%;
+  }
 }
