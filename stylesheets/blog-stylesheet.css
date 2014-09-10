@@ -148,6 +148,20 @@ a.selected, a:hover {
     font-weight:500;
   }
 
+  .blog-list {
+    font-size:14px;
+    margin:20px -25px 0 -25px;
+
+  }
+
+  .blog-list a {
+      text-decoration:none;
+      border-bottom:1px dotted #b7410e;
+  }
+
+  .blog-list a:hover {
+    border-bottom:1px dotted #b7410e;
+  }
   .link {
     color:#b7410e;
     text-decoration:underline;
@@ -198,7 +212,18 @@ a.selected, a:hover {
   font-weight:800;
 }
 
+.java-img {
+  width:50%;
+  margin:0 auto;
+}
 
+.list li {
+  line-height:22px;
+  text-align:justify;
+  font-family:inherit;
+
+
+}
 
 /* Styling of footer section */
 .primary-footer {
