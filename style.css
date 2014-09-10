@@ -3,9 +3,6 @@
 body {
   /*background:#F7ECE6;*/
   background:url("http://www.wallpaperbod.com/wallpapers/2013/05/Beautiful-Bridges-Free-Golden-Gate-Bridge-At-Night--900x2880.jpg");
-  /*
-  http://indervilla.com/home/Bridge-Nite-HD.jpg
-  */
   /*background:#fef2ee;*/
 }
 
@@ -148,29 +145,32 @@ a.selected, a:hover {
 }
 
 .projects {
-  border:1px solid white;
+  border:1px dotted white;
   width:39%;
   height:400px;
   display:inline-block;
   float:left;
   margin:1% 5% 3% 8%;
   border-radius:20px;
+}
 
-
-
+.projects li a {
+  border-bottom:1px dotted white;
 }
 
 .blogs {
-  border:1px solid white;
+  border:1px dotted white;
   width:39%;
   height:400px;
   display:inline-block;
   float:left;
   margin:1% 0 3% 0%;
   border-radius:20px;
-
 }
 
+.blogs li a{
+  border-bottom:1px dotted white;
+}
 
 .my-info-1 li a {
   color:#b7410e;
@@ -191,7 +191,6 @@ a.selected, a:hover {
     background:#b7410e;
     padding:2%;
     border-radius:20px;
-
 }
 
 .my-info-1 li {
