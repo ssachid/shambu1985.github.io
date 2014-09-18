@@ -161,7 +161,7 @@ a.selected, a:hover {
 .blogs {
   border:1px dotted white;
   width:39%;
-  height:400px;
+  /*height:400px;*/
   display:inline-block;
   float:left;
   margin:1% 0 3% 0%;
@@ -230,18 +230,20 @@ a.selected, a:hover {
   margin-right:30px;
   }
 
-  @media screen and (max-width:1366px) {
-        .my-info img {
-            width:30%;
-            height:50%;
-  }
+@media screen and (max-width:640px) {
+          .box {
+             margin:1% 1%;
+            }
+          .my-info-1 {
+            display:none;
+          }
 
-  .box {
-    margin:2% 2%;
-  }
-  }
+          .box {
+            display:none;
+          }
+      }
 
-  @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
        .logo {
             width:100%;
             margin:0 auto;
@@ -266,17 +268,30 @@ a.selected, a:hover {
           display:none;
         }
 
-     }
+}
 
-      @media screen and (max-width:640px) {
-          .box {
-             margin:1% 1%;
-            }
-          .my-info-1 {
-            display:none;
-          }
+  @media screen and (max-width:1621px) {
+      .my-info img {
+            width:350px;
+            height:250px;
+       }
 
-          .box {
-            display:none;
-          }
-      }
+       .about {
+        float:right;
+        margin-right: 3%;
+       }
+  }
+
+  @media screen and (max-width:1385px) {
+        .my-info img {
+            width:30%;
+            height:50%;
+  }
+
+  .box {
+    margin:2% 2%;
+  }
+  }
+
+
+
