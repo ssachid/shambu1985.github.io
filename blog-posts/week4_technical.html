@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale="1.0">
+        <title>Shambhavi's Blog </title>
+        <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script|Metamorphous' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+        <link rel="stylesheet" href="../stylesheets/normalize.css">
+        <link rel="stylesheet" href="../stylesheets/blog-stylesheet.css">
+    </head>
+    <body>
+        <header class="primary-header">
+          <div class="header">
+            <div class="logo">
+                <h1 class="logo-1">Shambhavi Sachid</h1>
+                <h3 class="logo-2">Web Developer</h3>
+            </div>
+            <nav class="nav primary-nav">
+              <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../other-pages/resume.html">RESUME</a></li>
+                <LI><a href="../other-pages/projects.html">PROJECTS</a></li>
+                <li><a href="t1-compare-websites.html">BLOG</a></li>
+                <li><a href="../other-pages/contact.html">CONTACT</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+<section class="main-content">
+      <section class="prev-blog">
+              <div class="prev-title">
+                 <h2 class="blog blog-heading next"><span>Previous</span><br><br>Cultural Blog:<br><br> Thoughts on My Thinking Style</h2>
+                 <div class="blog-content side">
+                     <p class="chef"><img src="../imgs/thinking.png" alt="chefs" width="100%"></p>
+                     <p class="side-blog">In this blog I have identified my personal thinking style to be abstract sequential by taking the <a class="link"href="http://www.thelearningweb.net/personalthink.html" target="_blank">personal thinking style quiz</a> based on the model created by Antony Gregorc. By recognizing and understanding your own learning styles, you can use techniques better suited to you. This improves the speed and quality of your learning. <br><br><a class="link" href="week3_cultural.html"> Read More</a></p>
+                  </div>
+              </div>
+        </section>
+
+
+          <section class="current-blog">
+
+              <div class="blog-title">
+               <p class="blog blog-arrow"><a href="week3_cultural.html">Previous</a></p>
+               <p class="blog-arrow blog-right"><a href="week4_cultural_blog.html">Next</a></p>
+               <h2 class="blog blog-heading">Technical Blog: Ruby Enumerable Module</h2>
+               <h4 class="blog">17th September 2014</h4>
+              </div>
+
+              <section class="blog-content">
+                  <div class="website-1">
+                    <p>Enumerable is actually a module which consists of a bunch of methods packaged together that can get mixed in with other classes like Array and Hash. It includes various types of methods to iterate over different types of objects in Ruby. It includes methods to traverse, search, sort and manipulate collections.</p>
+                    <p><span>Ruby Enumerable#map</span><br><br>
+                      <p class="java-img"><img src="http://globalnerdy.com/wordpress/wp-content/uploads/2008/06/ruby_enumerablecollect_enumerablemap.jpg" alt="map" width="100%"></p>
+                      <p>Enumerable map method takes an enumerable object and a block, iterates the block for  each element and outputs each returned value from the block. The original object remains unchanged unless you use the Enumerable#map! method</p>
+                      <p>Enumerable#map is a non destructive method that returns a new array</p>
+                      <p>Enumerabl#map! is a destructive method that mutates the original array.</p>
+
+                      <p>If the object is an array then,</p>
+                      <p>array.map {|item| block } -> new_array</p>
+                      <p>array.map! {|item| block } -> modified original array</p>
+                      <p>Lets start of with an example illustrating the usage of Enumerable#map method</p>
+                      <p>Given an array of strings, we convert it to an array of numbers.</p>
+                      <ol class="list">
+                        <li>Input is an array of strings which are numbers. array=["1","2","3"]</li>
+                        <li>Output is an array of numbers. array=[1,2,3]</li>
+                      </ol>
+                      <p><span>First approach: Without the use of Enumerable#map method</span><br>
+                      <p><img src="../imgs/map1.png" alt="map" width="100%"></p>
+                      <p>As you can see, we have used for loop to iterate through all the elements of the array
+                      and append the result to output array. The same logic can be implemented in a more simplified approach using the Enumerable#map method.</p>
+                      <p><span>Second simplified approach : Using the Enumerable#map method</span><br>
+                      <p>Enumerable map method returns a new array with the results of iterating the block once converting each item in array to an integer</p>
+                      <p>a=%w(1 2 3) is same as a=["1","2","3"] which is just an another way of declaring array of strings</p>
+                      <p><img src="../imgs/map2.png" alt="map" width="100%"></p>
+                      <p><span>Enumerable#map!</span><br><br> Enumerable#map! method iterates the block once for each element of self replacing the element with the value returned by the block.</p>
+                      <p><img src="../imgs/map3.png" alt="map" width="100%"></p>
+                      <p>Use of enumerable modules allow us to make the code clean, clear and concise avoiding multiple lines of code to perform the same operation.</p>
+                      <p><span>References</span><br><br>
+                      <ol class="list">
+                            <li>http://www.ruby-doc.org/core-2.1.2/Array.html#method-i-map</li>
+                            <li>http://ruby.about.com/od/rubysbasicfeatures/ss/Mapping-Arrays.html</li>
+                            <li>http://apidock.com/ruby/v1_9_3_392/Enumerable/map</li>
+                      </ol>
+                  </div>
+              </section>
+
+        </section>
+
+        <section class="next-blog">
+              <div class="next-title">
+                 <h2 class="blog blog-heading next"><span>Next</span><br><br>Cultural Blog:<br><br> Employee Tenure Problem in Tech Industry</h2>
+                 <div class="blog-content side">
+                     <p class="chef"><img src="http://media.careerbliss.com/cms/job%20hopping_large.jpg" alt="chefs" width="100%"></p>
+                     <p class="side-blog">In this blog I have identified employee tenure as one of the problems most relevant in the tech industry. Turnover is a major problem for many tech industries as it is extremely costly for the employer, particularly in jobs which offer higher education and extensive job training. Major factors of high turnover are the democratic factors and perceived alternative employment opportunity and job hopping.<br><br><a class="link" href="week4_cultural_blog.html"> Read More</a></p>
+                  </div>
+              </div>
+        </section>
+
+      </section>
+
+
+      <footer class="primary-footer container group">
+            <small>&copy; 2014 Shambhavi Sachid </small>
+            <nav class="nav">
+              <ul>
+                <li><a href="https://www.facebook.com/shambhavi.bhatt.1"><img src="../imgs/facebook.png"></a></li>
+                <li><a href="https://twitter.com/shambu1985"><img src="../imgs/twitter.png"></a></li>
+                <li><a href="https://www.linkedin.com/profile/view?id=259408775&trk=nav_responsive_tab_profile"><img src="../imgs/linkdin.png"></a></li>
+                <LI><a href="https://github.com/shambu1985"><img src="../imgs/github.png"></a></li>
+                <li><a href="https://plus.google.com/u/0/107790871642479149596/posts""><img src="../imgs/googleplus.png"></a></li>
+              </ul>
+            </nav>
+      </footer>
+
+    </body>
+</html>
