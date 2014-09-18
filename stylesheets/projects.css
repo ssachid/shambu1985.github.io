@@ -72,6 +72,10 @@ a.selected, a:hover {
 
 /* Styling of the main section */
 
+.main-section {
+  clear:both;
+}
+
 .side-category {
 
   margin:1% 2% 3% 15%;
