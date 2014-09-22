@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale="1.0">
+        <title>Shambhavi's Blog </title>
+        <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script|Metamorphous' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+        <link rel="stylesheet" href="../stylesheets/normalize.css">
+        <link rel="stylesheet" href="../stylesheets/blog-stylesheet.css">
+    </head>
+    <body>
+        <header class="primary-header">
+          <div class="header">
+            <div class="logo">
+                <h1 class="logo-1">Shambhavi Sachid</h1>
+                <h3 class="logo-2">Web Developer</h3>
+            </div>
+            <nav class="nav primary-nav">
+              <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../other-pages/resume.html">RESUME</a></li>
+                <LI><a href="../other-pages/projects.html">PROJECTS</a></li>
+                <li><a href="t1-compare-websites.html">BLOG</a></li>
+                <li><a href="../other-pages/contact.html">CONTACT</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+<section class="main-content">
+      <section class="prev-blog">
+              <div class="prev-title">
+                 <h2 class="blog blog-heading next"><span>Next</span><br><br>Cultural Blog:<br><br> Employee Tenure Problem in Tech Industry</h2>
+                 <div class="blog-content side">
+                     <p class="chef"><img src="http://media.careerbliss.com/cms/job%20hopping_large.jpg" alt="chefs" width="100%"></p>
+                     <p class="side-blog">In this blog I have identified employee tenure as one of the problems most relevant in the tech industry. Turnover is a major problem for many tech industries as it is extremely costly for the employer, particularly in jobs which offer higher education and extensive job training. Major factors of high turnover are the democratic factors and perceived alternative employment opportunity and job hopping.<br><br><a class="link" href="week4_cultural_blog.html"> Read More</a></p>
+                  </div>
+              </div>
+        </section>
+
+
+          <section class="current-blog">
+
+              <div class="blog-title">
+               <p class="blog blog-arrow"><a href="week4_cultural_blog.html">Previous</a></p>
+               <p class="blog-arrow blog-right"><a href="week5_cultural_blog.html">Next</a></p>
+               <h2 class="blog blog-heading">Technical Blog: Classes in Ruby</h2>
+               <h4 class="blog">21st September 2014</h4>
+              </div>
+
+              <section class="blog-content">
+                  <div class="website-1">
+                    <p class="java-img"><img src="http://www.leighinfants.co.uk/site/images/stories/Ruby_Class.png" alt="map" width="100%"></p>
+                    <p>In Ruby, classes basically act as the factories to build objects. An object instantiated from a certain class is called ‘an instance of that class’. Calling the method new on the class creates a new instance of the class. A class has two features:</p>
+                    <p><span>1. State</span><br>
+                      <p>State is data that is persisted over multiple calls to the thing. If it "remembers" anything between one execution and the next, then it has state. A class must have some kind of state that defines the attributes of its instances. In the case of a simple rectangle, this could be its length and breadth.</p>
+                      <p><span>1. Behavior</span><br>
+                      <p>Behavior is the code that manipulates or processes the state-data, or non-state data that is used only during a single execution of the code, (like parameter values passed to a function). Methods, subroutines or a function, anything that changes or does something is behavior.</p>
+
+                      <p>Classes in Ruby have names beginning with a capital letter. A class is defined as shown below. This creates a class of type Rectangle.</p>
+                      <p class="java-img"><img src="../imgs/class.png" alt="class" width="100%"></p>
+                      <p>Next we use the initialize method inside the class. This method is executed every time a new instance of class is created. Lets create an
+                      initialize method inside the class and give it the parameters of length and breadth.</p>
+                      <p class="java-img"><img src="../imgs/initialize.png" alt="class" width="100%"></p>
+                      <p>@ sign before a variable is used to signify that it is an instance variable. An instance variable is always bound to the specific instance of the class and cannot be used by other instances of the same class. This means every instance of the class Rectangle will have its own unique copy of these variables and is in effect, a distinct rectangle. The scope of instance variables is within the class and any method defined inside the class but cannot be accessed outside the class. To access the value of the instance variable outside the class, you need to define methods inside the class that set/modify/output the value of instance variables. @length and @breadth are the instance variables defined inside the classs.</p>
+                      <p>Now we define a behavior as methods on the class Rectangle. So lets define two instance methods [perimeter] and [area] that calculates the perimeter and area of the rectangle. The instance methods can be accessed outside the class by all instances of a particular class.</p>
+                      <p class="java-img"><img src="../imgs/method.png" alt="class" width="100%"></p>
+                      <p>Next we define two getter methods called [length] and [breadth] that return the value of the instance variables @length and @breadth. The getter methods have a corresponding shorthand method called attr_reader to achieve the same task.</p>
+                      <p><img src="../imgs/getter.png" alt="class" width="100%"></p>
+                      <p>Using the shorthand notation of the length and breadth method in the Rectangle class,</p>
+                      <p class="java-img"><img src="../imgs/full_class.png" alt="class" width="100%"></p>
+                      <p>Next we create an instance of the class Rectangle and call the instance methods periemeter, area and the getter methods length and breadth.</p>
+                      <p><img src="../imgs/output.png" alt="class" width="100%"></p>
+                      <p>This will print the respective values returned from the method. We can now create new instances of the class and assign independant length and breadth values as parameters.</p>
+                  </div>
+              </section>
+
+        </section>
+
+        <section class="next-blog">
+              <div class="next-title">
+                 <h2 class="blog blog-heading next"><span>Next</span><br><br>Cultural Blog:<br><br> Employee Tenure Problem in Tech Industry</h2>
+                 <div class="blog-content side">
+                     <p class="chef"><img src="http://media.careerbliss.com/cms/job%20hopping_large.jpg" alt="chefs" width="100%"></p>
+                     <p class="side-blog">In this blog I have identified employee tenure as one of the problems most relevant in the tech industry. Turnover is a major problem for many tech industries as it is extremely costly for the employer, particularly in jobs which offer higher education and extensive job training. Major factors of high turnover are the democratic factors and perceived alternative employment opportunity and job hopping.<br><br><a class="link" href="week4_cultural_blog.html"> Read More</a></p>
+                  </div>
+              </div>
+        </section>
+
+      </section>
+
+
+      <footer class="primary-footer container group">
+            <small>&copy; 2014 Shambhavi Sachid </small>
+            <nav class="nav">
+              <ul>
+                <li><a href="https://www.facebook.com/shambhavi.bhatt.1"><img src="../imgs/facebook.png"></a></li>
+                <li><a href="https://twitter.com/shambu1985"><img src="../imgs/twitter.png"></a></li>
+                <li><a href="https://www.linkedin.com/profile/view?id=259408775&trk=nav_responsive_tab_profile"><img src="../imgs/linkdin.png"></a></li>
+                <LI><a href="https://github.com/shambu1985"><img src="../imgs/github.png"></a></li>
+                <li><a href="https://plus.google.com/u/0/107790871642479149596/posts""><img src="../imgs/googleplus.png"></a></li>
+              </ul>
+            </nav>
+      </footer>
+
+    </body>
+</html>
