@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale="1.0">
+        <title>Shambhavi's Blog </title>
+        <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script|Metamorphous' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+        <link rel="stylesheet" href="../stylesheets/normalize.css">
+        <link rel="stylesheet" href="../stylesheets/blog-stylesheet.css">
+    </head>
+    <body>
+        <header class="primary-header">
+          <div class="header">
+            <div class="logo">
+                <h1 class="logo-1">Shambhavi Sachid</h1>
+                <h3 class="logo-2">Web Developer</h3>
+            </div>
+            <nav class="nav primary-nav">
+              <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../other-pages/resume.html">RESUME</a></li>
+                <LI><a href="../other-pages/projects.html">PROJECTS</a></li>
+                <li><a href="t1-compare-websites.html">BLOG</a></li>
+                <li><a href="../other-pages/contact.html">CONTACT</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+<section class="main-content">
+      <section class="prev-blog">
+              <div class="prev-title">
+                 <h2 class="blog blog-heading next"><span>Next</span><br><br>Cultural Blog:<br><br> Pair Programming and Feedback</h2>
+                 <div class="blog-content side">
+                     <p class="chef"><img src="../imgs/pair.png" alt="chefs" width="100%"></p>
+                     <p class="side-blog">In this blog I have shared my ideas and experience about pair programming and the impact of feedback on my personal development. Pairing has always turned out to be beneficial to me in every way and I have been able to achieve a significant improvement in my programming skills. Every feedback I received after pair programming has helped me a lot to evaluate and improve myself to get better and better at every pairing session. <br><br><a class="link" href="week5_cultural.html"> Read More</a></p>
+                  </div>
+              </div>
+        </section>
+
+
+          <section class="current-blog">
+
+              <div class="blog-title">
+               <p class="blog blog-arrow"><a href="week5_cultural.html">Previous</a></p>
+               <p class="blog-arrow blog-right"><a href="week6_cultural_blog.html">Next</a></p>
+               <h2 class="blog blog-heading">Technical Blog: Ruby Variable Scope</h2>
+               <h4 class="blog">30th September 2014</h4>
+              </div>
+
+              <section class="blog-content">
+                  <div class="website-1">
+                    <p>Variable scope defines where in a program a variable is accessible. Each variable type is declared by using a special character at the start of the variable name.</p>
+                    <p>The different variable scopes available in ruby are:</p>
+                    <ol class="list">
+                      <li>Local variables [a-z] or _</li>
+                      <li>Global variables $</li>
+                      <li>Instance variables @</li>
+                      <li>Class variables @@</li>
+                      <li>Class instance variables @</li>
+                    </ol>
+                    <p><img src="../imgs/variable_scope.png" alt="map" width="100%"></p>
+                    <p><span>1. Local Variables</span></p>
+                    <p>Local variables are local to the code construct in which they are declared. For example, a local variable declared in a method or within a loop cannot be accessed outside of that loop or method. Local variable names must begin with either an underscore or a lower case letter. For example, count is a local variable and accessing it outside the method raises a NameError.</p>
+                    <p class="java-img"><img src="../imgs/local.png" alt="class" width="100%"></p>
+                    <p><span>2. Global Variables</span></p>
+                    <p>Global variables in Ruby are accessible from anywhere in the Ruby program, regardless of where they are declared. Global variable names are prefixed with a dollar sign ($). For example, $count is a global variable and is accessible outside the class.</p>
+                    <p class="java-img"><img src="../imgs/global.png" alt="class" width="100%"></p>
+                    <p><span>3. Instance Variables</span></p>
+                    <p>Instance variables are bound to the specific instance of a class. They by declared by prefixing the variable name with a single @ symbol. Changes made to an instance variable by one object of the class are local to that object. Every object of the same class has their own local copies of the variable, which are independent of changes made in any other objects.</p>
+                    <p class="java-img"><img src="../imgs/instance.png" alt="class" width="100%"></p>
+                    <p><span>4. Class Variables</span></p>
+                    <p>Class variables are prefixed with @@ symbol. Class variables are like instance variables, but instead of belonging to an instance of  a class, they belong to the class itself. Class variables are shared by all objects of a class. Instance methods can access both the class variables and the class methods. Class methods can access class variables but cannot access instance variables or instance methods.</p>
+                    <p class="java-img"><img src="../imgs/class_var.png" alt="class" width="100%"></p>
+                    <p><span>5. Class Instance Variables</span></p>
+                    <p>Class instance variables use the same notation as that of an instance variable. But unlike instance variable, you declare them inside the class definition directly. Class instance variables are a better alternative to class variables because the data is not shared across the inheritance chain. The difference between the class instance variable and an instance variable is that a class instance variable is initialized directly in the class body and is accessed only from class methods.</p>
+                    <p>In the example below @count is the class instance variable, which has a separate assigned value for both classes Foo and Bar. Incrementing @count in Foo class does not have any effect in the @count of The Bar class and vice versa.</p>
+                    <p class="java-img"><img src="../imgs/class_inst.png" alt="class" width="100%"></p><br><br>
+                  </div>
+              </section>
+
+        </section>
+
+        <section class="next-blog">
+              <div class="next-title">
+                 <h2 class="blog blog-heading next"><span>Next</span><br><br>Cultural Blog:<br><br> Pair Programming and Feedback</h2>
+                 <div class="blog-content side">
+                     <p class="chef"><img src="../imgs/pair.png" alt="chefs" width="100%"></p>
+                     <p class="side-blog">In this blog I have shared my ideas and experience about pair programming and the impact of feedback on my personal development. Pairing has always turned out to be beneficial to me in every way and I have been able to achieve a significant improvement in my programming skills. Every feedback I received after pair programming has helped me a lot to evaluate and improve myself to get better and better at every pairing session. <br><br><a class="link" href="week5_cultural.html"> Read More</a></p>
+                  </div>
+              </div>
+        </section>
+
+      </section>
+
+
+      <footer class="primary-footer container group">
+            <small>&copy; 2014 Shambhavi Sachid </small>
+            <nav class="nav">
+              <ul>
+                <li><a href="https://www.facebook.com/shambhavi.bhatt.1"><img src="../imgs/facebook.png"></a></li>
+                <li><a href="https://twitter.com/shambu1985"><img src="../imgs/twitter.png"></a></li>
+                <li><a href="https://www.linkedin.com/profile/view?id=259408775&trk=nav_responsive_tab_profile"><img src="../imgs/linkdin.png"></a></li>
+                <LI><a href="https://github.com/shambu1985"><img src="../imgs/github.png"></a></li>
+                <li><a href="https://plus.google.com/u/0/107790871642479149596/posts""><img src="../imgs/googleplus.png"></a></li>
+              </ul>
+            </nav>
+      </footer>
+
+    </body>
+</html>
