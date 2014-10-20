@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Shambhavi's GIT cheatsheet</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script|Metamorphous' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="heading">
+      <h1>GIT CHEATSHEET</h1>
+      <h2>Shambhavi Sachid</h2>
+    </header>
+    <section class=" col1 table-col">
+        <article class="table table1">
+            <p class="title"><strong>git config</strong></p>
+            <p><span>Set up user name</span><br>git config --global user.name "Your name"</p>
+            <p><span>Set up user email</span><br>git config --global user.email "your_email@whatever.com"</p>
+            <p><span>Verify user name</span><br>git config --get user.name</p>
+            <p><span>Verify user email</span><br>git config --get user.email</p>
+            <p></p>
+        </article>
+        <article class="table table2">
+            <p class="title"><strong>Git Help</strong></p>
+            <p><span>Viewing the list of commands</span><br>git help</p>
+            <p><span>Getting a command info</span><br>git help command_name</p>
+            <p><span>Getting info about config command</span>git help config</p>
+            <p></p>
+        </article>
+        <article class="table table4">
+            <p class="title"><strong>Staging and Committing</strong></p>
+            <p><span>Create an empty repository</span><br>git init</p>
+            <p><span>Add hello.rb file to the staging area</span><br>git add hello.rb<br>git add .<br>git add *.txt</p>
+            <p><span>Record changes to the repository</span><br>git commit -m "commit_message"</p>
+            <p><span>Check the status of the repository</span><br>git status</p>
+            <p></p>
+        </article>
+        <article class="table table5">
+            <p class="title"><strong>History</strong></p>
+            <p><span>Check complete history</span><br>git log</p>
+            <p><span>One line Histories</span><br>git log --pretty=oneline</p>
+            <p><span>Controlling which entries are displayed</span><br>git log --pretty=oneline --max-count=n
+              <br>git log --pretty=oneline --since='5 minutes ago'<br>git log pretty=oneline until='5 minutes ago'
+              <br>git log --pretty=oneline --author=author_name<br>git log --pretty=oneline --all<br>
+              git log --all --pretty=format:'%h %cd %s (%an)' --since='7 days ago'<br>
+              git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short</p>
+            <p></p>
+        </article>
+        <article class="table table8">
+            <p class="title"><strong>Tagging Versions</strong></p>
+            <p><span>Tagging version 1</span><br>git tag v1 <small>(v1 is any tag_name)</small></p>
+            <p><span>Tagging Previous Versions</span><br>git checkout v1^<br>git tag v1-beta <small>(v1-beta is any tag_name of previous version)</small></p>
+            <p><span>Checking out file by Tag Name</span><br>git checkout v1 &nbsp; ; &nbsp; cat filename<br>
+              git checkout v1-beta &nbsp; ; &nbsp; cat filename</p>
+            <p><span>Viewing tags</span><br>git tag</p>
+            <p><span>Viewing tags in the log</span><br>git hist master --all</p>
+            <p></p>
+        </article>
+        <article class="table table3">
+            <p class="title"><strong>Undoing changes </strong></p>
+            <p><span>Undoing local changes(Before staging)</span><br>git checkout filename.ext<br>git status</p>
+            <p><span>Undoing staged changes(Before committing)</span><br>git reset HEAD filename.ext<br>git checkout filename.ext
+            <br>git status</p>
+            <p><span>Undoing committed changes</span><br>git revert HEAD --no-edit<br><small>--no-edit is necessary to generate the output without opening the editor</small></p>
+            <p></p>
+        </article>
+        <article class="table table5">
+            <p class="title"><strong>Creating and Navigating a Branch</strong></p>
+            <p><span>Creating a local branch</span><br>git checkout -b branch_name<br>git status</p>
+            <p><span>Switching to a branch</span><br>git checkout branch_name</p>
+            <p><span>Switching to the master branch</span><br>git checkout master</p>
+            <p><span>List all the branches</span><br>git branch</p>
+            <p></p>
+        </article>
+        <article class="table table2">
+            <p class="title"><strong>Merging</strong></p>
+            <p><span>Merging master into greet branch</span><br>git checkout greet<br>git merge master<br>git hist --all</p>
+            <p></p>
+        </article>
+        <article class="table table1">
+            <p class="title"><strong>Resolving Merge conflicts</strong></p>
+            <p><span>Merging master into greet branch</span><br>git checkout greet<br>git merge master</p>
+            <p><span>Resolving conflicts</span><br>Open the file and resolve the conflict manually.</p>
+            <p><span>Commit the conflict resolution</span>git add file_name<br>git commit -m "Merged conflict resolved"
+              <br>git hist --all</p>
+            <p></p><br>
+        </article>
+    </section>
+
+    <section class="col2 table-col">
+        <article class="table table3">
+            <p class="title"><strong>Aliases</strong></p>
+            <p><span>Alias for checkout</span><br>git config --global alias.co checkout<br>git co</p>
+            <p><span>Alias for commit</span><br>git config --global alias.ci commit<br>git ci</p>
+            <p><span>Alias for status</span><br>git config --global alias.st status<br>git st</p>
+            <p><span>Alias for branch</span><br>git config --global alias.br branch<br>git br</p>
+            <p><span>Alias for history</span><br>git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'<br>git hist</p>
+            <p><span>Alias for type</span><br>git config --global alias.type 'cat-file -t'<br>git type</p>
+            <p><span>Alias for dump</span><br>git config --global alias.dump 'cat-file -p'<br>git dump</p>
+            <p></p>
+        </article>
+        <article class="table table6">
+            <p class="title"><strong>Getting Older Versions</strong></p>
+            <p><span>Check complete history</span><br>git hist <small>(if alias set)</small>&nbsp; or &nbsp; git log</p>
+            <p><span>Checkout previous versions</span><br>git checkout commit_hash</p>
+            <p><span>Checkout the contents of file</span><br>cat filename</p>
+            <p><span>Return to latest version in master branch</span><br>git checkout master</p>
+            <p></p>
+        </article>
+        <article class="table table7">
+            <p class="title"><strong>Removing commits from a branch</strong></p>
+            <p><span>Check our History</span><br>git hist <small>or</small> git log</p>
+            <p><span>First, mark the latest commit</span><br>git tag t1 <small> t1 is tag_name</small></p>
+            <p><span>Reset to before t1</span><br>git reset --hard t1</p>
+            <p><span>Check the history</span><br>git hist <small>or</small> git log </p>
+            <p></p>
+        </article>
+        <article class="table table1">
+            <p class="title"><strong>Removing the tag</strong></p>
+            <p><span>Removing the tag t1</span><br>git tag -d t1</p>
+            <p><span>Check history</span><br>git hist --all <small>or</small> git log --all</p>
+            <p></p>
+        </article>
+         <article class="table table6">
+            <p class="title"><strong>Ammending commits</strong></p>
+            <p><span>Amend the previous commit</span><br>git commit --amend -m "commit_message"</p>
+            <p><span>Review history</span><br>git hist</p>
+            <p></p>
+        </article>
+        <article class="table table2">
+            <p class="title"><strong>Moving Files</strong></p>
+            <p><span>Moving files to a directory</span><br>mkdir dir_name<br>git mv filename.ext dir_name<br>git status
+              <br>git commit -m "commit_message"</p>
+            <p></p>
+        </article>
+        <article class="table table9">
+            <p class="title"><strong>Rebasing</strong></p>
+            <p><span>Rebasing master into greet branch</span><br>git checkout greet<br>git rebase master<br>git hist</p>
+            <p></p>
+        </article>
+        <article class="table table4">
+            <p class="title"><strong>Remote Repositories</strong></p>
+            <p><span>To clone from a remote repo</span><br>git clone http_url/ssh_url</p>
+            <p><span>To push from local repo to a remote repo</span><br>git push -u origin master</p>
+            <p><span>To pull changes from a remote repo</span><br>git pull origin master</p>
+            <p class="title"><strong>Fetch changes from remote repo</strong></p>
+            <p><span>Check your remote repo</span><br>git remote -v</p>
+            <p><span>Set a new repo</span><br>git remote add upstream http_url</p>
+            <p><span>View your remote repo</span><br>git remote -v</p>
+            <p><span>Fetch changes</span><br>git fetch upstream</p>
+            <p><span>List all local and remote branches</span><br>git branch -va</p>
+            <p><span>Merge the changes</span><br>git checkout master<br>git merge upstream/master</p>
+            <p><span>Commit and push to new local repo</span><br>git commit -m "Merged changes"<br>git push origin master</p>
+            <p></p><br><br>
+        </article>
+    </section>
+    <div class="footer">
+      <p>&copy; 2014 Shambhavi Sachid</p>
+    </div>
+
+  </body>
