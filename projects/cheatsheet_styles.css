@@ -18,12 +18,12 @@ body {
 
 .table-col {
   display:inline-block;
-  width:40%;
+  width:43%;
   /*margin:auto 0 auto 6%;*/
 }
 
 .col1 {
-  margin-left:8%;
+  margin-left:6%;
   margin-right:0.4%;
 }
 
@@ -31,7 +31,7 @@ body {
   padding-right:-50%;
 }
 
-.table1 span {
+.table span {
   font-weight:600;
   /*background: #E0FFC2;*/
 }
@@ -139,4 +139,18 @@ body {
   text-align: center;
   font-size:15px;
   color:white;
+}
+
+@media screen and (max-width:1000px) {
+  .col1 {
+    display:block;
+    width:80%;
+    margin:5% 5% 5% 8%;
+  }
+
+  .col2 {
+    display:block;
+    width:80%;
+    margin:5% 5% 5% 8%;
+  }
 }
