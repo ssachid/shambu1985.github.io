@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale="1.0">
+        <title>Shambhavi's Blog </title>
+        <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script|Metamorphous' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+        <link rel="stylesheet" href="../stylesheets/normalize.css">
+        <link rel="stylesheet" href="../stylesheets/blog-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/prism-m.css">
+        <script src="../assets/prism.js"></script>
+    </head>
+    <body>
+        <header class="primary-header">
+          <div class="header">
+            <div class="logo">
+                <h1 class="logo-1">Shambhavi Sachid</h1>
+                <h3 class="logo-2">Web Developer</h3>
+            </div>
+            <nav class="nav primary-nav">
+              <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../other-pages/resume.html">RESUME</a></li>
+                <LI><a href="../other-pages/projects.html">PROJECTS</a></li>
+                <li><a href="t1-compare-websites.html">BLOG</a></li>
+                <li><a href="../other-pages/contact.html">CONTACT</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+<section class="main-content">
+      <section class="prev-blog">
+              <div class="prev-title">
+                 <h2 class="blog blog-heading next"><span>Prev</span><br><br>Cultural Blog:<br><br> Affirmation and Stereotype Threat</h2>
+                 <div class="blog-content side">
+                     <p class="side-blog">In this blog I have identified and explored the values that are important to me. Among all the values, I find confidence as one among the most important assets as I believe it to be the foundation for everthing in life. Confidence is just being you and being prepared to face any circumstances that come across your way. I have explored some of the ways to use affirmation to help succeed in life. Values can be a powerful way to negate stereotype threat if you can bring them to mind when you are under a threat.<br><br><a class="link" href="week7_cultural.html"> Read More</a></p>
+                  </div>
+              </div>
+        </section>
+
+
+          <section class="current-blog">
+
+              <div class="blog-title">
+               <p class="blog blog-arrow"><a href="week7_cultural.html">Previous</a></p>
+               <p class="blog-arrow blog-right"><a href="week8_cultural_blog.html">Next</a></p>
+               <h2 class="blog blog-heading">Technical Blog: Recursion</h2>
+               <h4 class="blog">19th October 2014</h4>
+              </div>
+
+              <section class="blog-content">
+                  <div class="website-1">
+                    <p class="java-img"><img src="http://ezzata.files.wordpress.com/2012/09/recrecrec.jpg" alt="map" width="100%"></p>
+                    <p>Recursion is a function calling itself hopefully with the simpler versions of the original problem.</p>
+                    <p>It consists of two main characteristics:<br>
+                    1. &nbsp; An end goal, or base case (non recursive)<br>
+                    2. &nbsp; Recursive case(s) : One or more cases that are different versions of the original problem<br></p>
+                    <p><span>Example 1<br>Finding the factorial of a number using recursion</span><p>
+                    <pre><code class="language-ruby">
+  def fact(n)
+    return 1 if n==0
+    return n*fact(n-1)
+  end
+  p fact(5) #120
+                    </code></pre>
+                    <p>The first line is defining a method factorial which takes n as a parameter.The second line is setting our base case, which is the point at which the recursion should stop happening. Any error writing this base case may take you to an infinite loop. For factorial, we want the recursion to go until we’ve gotten to 1.The third line is where we’re calling the method itself and setting up what’s actually happening: every time you call factorial method, you’re multiplying the given number by one less than itself. This continues till n becomes equal to 1 , which is when it executes the base case and returns the accumulated result.</p>
+                    <p><span>The work flow of the solution is as follows:</span></p>
+                    <pre><code class="language-ruby">
+fac(5)
+    |
+    5 * fact(4)
+             |
+             4 * fac(3)
+                     |
+                     3 * fact(2)
+                              |
+                              2 * fact(1)
+                                       |
+                                       1 * fact(0)
+                                                |
+                                                1
+Output: 5 * 4 * 3 * 2 * 1 * 1 = 120
+</code></pre>
+                    <p><span>Example 2:<br> Finding whether a number is a fibonacii number or not</span></p>
+                    <pre><code class="language-ruby">
+  def is_fib?(x=0, y=1, num)
+    (num > y) && is_fib?(y,x+y,num) or num==y
+  end
+
+  p is_fib?(5) #true
+                    </code></pre>
+                    <p>Here it keeps calling the function is_fibonacci? till the number becomes less than or
+                    equal to y(=x+y), which is passed as a second parameter to the method. If y and the num are equal, it returns true else returns false</p>
+                    <p><span>The work flow of the solution is as follows:</span></p>
+                    <pre><code class="language-ruby">
+  is_fib?(x=0,y=1,5)
+              |
+        is_fib?(x=1,y=1,5)
+                  |
+                is_fib?(x=1,y=2,5)
+                          |
+                        is_fib?(x=2,y=3,5)
+                                    |
+                                is_fib(x=3,y=5,5)
+                                          |
+                                        num==y
+                                        (5==5)
+                                         true
+
+</code></pre>
+                    <p><span>Resources</span></p>
+                    <ol class="list">
+                      <li>http://stackoverflow.com/questions/6418017/what-is-ruby-recursion-and-how-does-it-work</li>
+                      <li>http://webdocs.cs.ualberta.ca/%7Eholte/T26/efficient-rec.html</li>
+                      <li>http://www.sitepoint.com/functional-programming-techniques-with-ruby-part-iii/</li>
+                      <li>http://natashatherobot.com/recursion-factorials-fibonacci-ruby</li>
+                    </ol>
+              </section>
+
+        </section>
+
+        <section class="next-blog">
+              <div class="next-title">
+                <h2 class="blog blog-heading next"><span>Next</span><br><br>Cultural Blog:<br><br> Dealing with Conflict</h2>
+                 <div class="blog-content side">
+                     <p class="chef"><img src="http://3.bp.blogspot.com/-2ylImw4G2g4/Tfs_FpPbAxI/AAAAAAAAAQI/K1vDnBYkShw/s1600/shameu.jpg" alt="chefs" width="100%"></p>
+                     <p class="side-blog">In this blog I have presented my experiences about dealing with conflict and what I learnt from that experience. Having the skills and a good understanding of the nature of the conflict can help to deal with it efficiently and confidently. As professionals our role is to bring the best knowledge and strategies to issues to address them in a productive, respectful and positive matter.<br><br><a class="link" href="week8_cultural_blog.html"> Read More</a></p>
+                  </div>
+              </div>
+        </section>
+
+      </section>
+
+
+      <footer class="primary-footer container group">
+            <small>&copy; 2014 Shambhavi Sachid </small>
+            <nav class="nav">
+              <ul>
+                <li><a href="https://www.facebook.com/shambhavi.bhatt.1"><img src="../imgs/facebook.png"></a></li>
+                <li><a href="https://twitter.com/shambu1985"><img src="../imgs/twitter.png"></a></li>
+                <li><a href="https://www.linkedin.com/profile/view?id=259408775&trk=nav_responsive_tab_profile"><img src="../imgs/linkdin.png"></a></li>
+                <LI><a href="https://github.com/shambu1985"><img src="../imgs/github.png"></a></li>
+                <li><a href="https://plus.google.com/u/0/107790871642479149596/posts""><img src="../imgs/googleplus.png"></a></li>
+              </ul>
+            </nav>
+      </footer>
+
+    </body>
+</html>
