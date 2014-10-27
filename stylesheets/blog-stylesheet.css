@@ -1,7 +1,7 @@
 /* General Styling*/
 
 body {
-  background:#fef2ee;
+  background:white;
 }
 
 /* General Styling of Links*/
@@ -20,7 +20,7 @@ a.selected, a:hover {
 
 .primary-header {
   text-align:center;
-  background:#b7410e;
+  background:blue;
   padding-top:10px;
   padding-bottom:3%;
 
@@ -235,7 +235,7 @@ a.selected, a:hover {
   clear:both;
   padding-bottom:80px;
   padding-top:48px;
-  background:#b7410e;
+  background:blue;
   }
 
 .primary-footer small {

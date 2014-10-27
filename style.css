@@ -3,7 +3,7 @@
 body {
   /*background:#F7ECE6;*/
   background:url("http://www.wallpaperbod.com/wallpapers/2013/05/Beautiful-Bridges-Free-Golden-Gate-Bridge-At-Night--900x2880.jpg");
-  background:black;
+  background:white;
   /*background:#fef2ee;*/
 }
 
@@ -23,7 +23,7 @@ a.selected, a:hover {
 
 .primary-header {
   text-align:center;
-  background:#b7410e;
+  background:blue;
   padding-top:10px;
   padding-bottom:3%;
   margin-top:-10px;
@@ -111,7 +111,7 @@ a.selected, a:hover {
   width:160px;
   text-align:center;
   height:80px;
-  background:#b7410e;
+  background:blue;
   /*background:linear-gradient(#b7410e,#38acec,#309067,#6aa121,#b7410e);*/
   margin:0 6%;
   border-radius:50%;
@@ -120,14 +120,14 @@ a.selected, a:hover {
 
   .content-1 {
     font:  400%/40%  cursive,  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #b7410e;
-    color:white;
+    color: blue;
+    /*color:#b7410e;*/
   }
 
   .content-2 {
     font:  225%/20%  cursive,  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #b7410e;
-    color:white;
+    color: blue;
+    /*color:#b7410e;*/
   }
 
 
@@ -139,13 +139,44 @@ a.selected, a:hover {
 
 .about-me {
   font:  110%/150%  cursive,  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #b7410e;
-    color:white;
+    /*color: #b7410e;*/
+    color:blue;
   text-align:justify;
 
 }
 
-.projects {
+.proj {
+  width:15.5%;
+  height:108px;
+  background:grey;
+  display:inline-block;
+  margin:0.1% 0;
+  color:white;
+  text-align:center;
+}
+
+.proj-1 {
+  margin-left:10%;
+
+}
+
+.proj-2 {
+  margin-left:10%;
+}
+
+.blog-10 {
+  margin-bottom:4%;
+}
+.proj-5 {
+  margin-bottom:2%;
+}
+.title {
+  color:blue;
+  text-align:center;
+  font-size:20px;
+  margin:1%;
+}
+/*.projects {
   border:1px dotted white;
   width:39%;
   height:400px;
@@ -153,57 +184,57 @@ a.selected, a:hover {
   float:left;
   margin:1% 5% 3% 8%;
   border-radius:20px;
-}
+}*/
 
-.projects li a {
+/*.projects li a {
   border-bottom:1px dotted white;
-}
+}*/
 
-.blogs {
+/*.blogs {
   border:1px dotted white;
   width:39%;
   /*height:400px;*/
-  display:inline-block;
+ /* display:inline-block;
   float:left;
   margin:1% 0 3% 0%;
   border-radius:20px;
-}
+}*/
 
-.blogs li a{
+/*.blogs li a{
   border-bottom:1px dotted white;
-}
+}*/
 
-.my-info-1 li a {
+/*.my-info-1 li a {
   color:#b7410e;
   color:white;
   font:  100%/130%  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-alignment: justify;
-}
+}*/
 
-.my-info-1 li a:hover {
+/*.my-info-1 li a:hover {
   border-bottom:1px dotted white;
 
-}
-.recent {
+}*/
+/*.recent {
   text-align:center;
   margin:0% auto 0;
   font:  110%/150% 'Metamorphous', cursive,  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: white;
-    background:#b7410e;
+    background:black;
     padding:2%;
     border-radius:20px;
-}
+}*/
 
-.my-info-1 li {
+/*.my-info-1 li {
   color:white;
 }
-
+*/
   /* Styling of footer section */
 .primary-footer {
   clear:both;
   padding-bottom:80px;
   padding-top:48px;
-  background:#b7410e;
+  background:blue;
   }
 
 .primary-footer small {
